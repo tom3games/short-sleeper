@@ -31,10 +31,10 @@ img{position:absolute;filter:drop-shadow(5px 8px 0 rgba(0,0,0,.3))}
 </style></head><body>
 <div class="cur l"></div><div class="cur r"></div><div class="top"></div><div class="spot"></div><div class="floor"></div>
 <div class="flash"></div>
-<img src="img/guru_deep.webp" style="right:120px;bottom:20px;height:560px">
+<img src="img/guru_shades.webp" style="right:150px;bottom:20px;height:580px">
 <img src="img/jour_gotcha.webp" style="left:450px;bottom:235px;height:230px">
-<img src="img/aud0_shock.webp" style="left:20px;bottom:-10px;height:250px">
-<img src="img/aud1_shock.webp" style="left:265px;bottom:-14px;height:250px">
+<img src="img/oba_shock.webp" style="left:20px;bottom:-10px;height:250px">
+<img src="img/kid_shock.webp" style="left:265px;bottom:-14px;height:230px">
 <img src="img/aud2_shock.webp" style="left:445px;bottom:-12px;height:250px">
 <div class="mark" style="left:480px;top:130px">!?</div>
 <div class="ono" style="right:70px;top:40px">ぐおー</div>

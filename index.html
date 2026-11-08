@@ -9,12 +9,12 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="1日3分のショートスリーパー | THE 3-MINUTE SLEEPER">
 <meta property="og:description" content="「睡眠は3分で足りる」と言い張る先生。見られていない隙にこっそり寝ろ。見つかったら「瞑想です」。">
-<meta property="og:image" content="https://tom3games.github.io/short-sleeper/og.png?v=2">
+<meta property="og:image" content="https://tom3games.github.io/short-sleeper/og.png?v=3">
 <meta property="og:url" content="https://tom3games.github.io/short-sleeper/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="1日3分のショートスリーパー | THE 3-MINUTE SLEEPER">
 <meta name="twitter:description" content="見られていない隙にこっそり寝ろ。見つかったら「瞑想です」。">
-<meta name="twitter:image" content="https://tom3games.github.io/short-sleeper/og.png?v=2">
+<meta name="twitter:image" content="https://tom3games.github.io/short-sleeper/og.png?v=3">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 32 Q32 10 60 32 Q32 54 4 32z' fill='%23fff' stroke='%23222' stroke-width='4'/%3E%3Cpath d='M4 32 Q32 22 60 32' fill='%23f07a1a' stroke='%23222' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,7 +113,7 @@ body.playing #corner{display:none}
 @keyframes tw{to{transform:translateY(-3%) rotate(2deg)}}
 .w.zzz::after,#guru.deep::after{content:'Zz';position:absolute;top:2%;right:-6%;font-family:var(--pop);font-size:6cqh;color:#fff;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill;animation:zz 1.4s ease-in-out infinite}
 .mark{position:absolute;z-index:6;font-family:var(--pop);color:var(--yel);-webkit-text-stroke:4px var(--ink);paint-order:stroke fill;font-size:8cqh;line-height:1;pointer-events:none;transform:translate(-50%,-100%)}
-.mark.q{color:#fff;font-size:6cqh;animation:pop .35s ease-in-out infinite alternate}
+.mark{white-space:nowrap}.mark.q{color:#fff;font-size:4.6cqh;animation:pop .35s ease-in-out infinite alternate}
 @keyframes pop{to{transform:translate(-50%,-112%) scale(1.12)}}
 #fxl{position:absolute;inset:0;z-index:8;pointer-events:none}
 #beams{position:absolute;inset:0;width:100%;height:100%;z-index:5;pointer-events:none;overflow:visible}
@@ -164,18 +164,54 @@ body.playing #corner{display:none}
 #eye .ring{fill:none;stroke:rgba(255,255,255,.18);stroke-width:3}
 #eye.hold .ring{stroke:#9fb3df}
 #eye .elab{font-weight:800;fill:#cfd8ee;font-size:12px}
-#ex{width:29%;max-width:126px;flex:none;align-self:center;min-height:76px;border-radius:50% 50% 50% 50%/56% 56% 44% 44%;background:#3b4566;color:#8e98b6;border:2.5px solid #56618a;font-weight:800;font-size:14px;line-height:1.25;padding:6px 6px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}
-#ex::after{content:'';position:absolute;left:18%;bottom:-11px;border:9px solid transparent;border-top-color:#56618a;border-bottom:0;transform:skewX(25deg)}
-#ex .cred{display:flex;gap:4px;margin-top:5px}#ex .cred i{width:7px;height:7px;border-radius:50%;background:#8e98b6}#ex .cred i.u{background:transparent;border:1.5px solid #6b7598}
-#ex.on{background:var(--yel);color:var(--ink);border-color:var(--ink);animation:exb .3s ease-in-out infinite alternate;font-size:clamp(13px,3.7vw,16px)}
-#ex.on::after{border-top-color:var(--ink)}
-#ex.on .cred i{background:var(--ink)}#ex.on .cred i.u{border-color:var(--ink);background:transparent}
 @keyframes exb{to{transform:scale(1.07) rotate(-2deg)}}
 .hint{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);width:max-content;max-width:calc(100vw - 24px);background:var(--paper);color:var(--ink);padding:6px 12px;font-size:15px;font-weight:800;border:2px solid var(--ink);border-radius:8px;pointer-events:none;text-align:center;z-index:20}
 #finger{position:absolute;width:46px;height:46px;pointer-events:none;z-index:21;animation:tap .7s ease-in-out infinite alternate}
 @keyframes tap{to{transform:translate(4px,8px) scale(.94)}}
 #bMuteP{position:absolute;right:max(6px,env(safe-area-inset-right));top:-46px;width:40px;height:40px;border-radius:20px;background:rgba(20,26,44,.6);color:var(--paper);display:flex;align-items:center;justify-content:center;z-index:7}
 #bMuteP svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2}
+
+
+/* v2: 見る人の名札・合図・付箋・配信コメント・カメラマンの指 */
+.nm{position:absolute;left:50%;bottom:1%;transform:translateX(-50%);z-index:4;background:var(--ink);color:#fbf7ee;font-size:11px;font-weight:800;line-height:1.35;padding:0 6px;border-radius:8px;white-space:nowrap;pointer-events:none;border:1.5px solid #fbf7ee}
+.cam .nm,.phonecam .nm{bottom:-1%}
+.w.glow::after{content:'';position:absolute;left:24%;top:4%;width:60%;height:46%;z-index:2;pointer-events:none;background:radial-gradient(closest-side,rgba(200,245,255,.95),rgba(160,230,255,.45) 55%,rgba(160,230,255,0));animation:gl .25s ease-in-out infinite alternate}
+@keyframes gl{to{opacity:.55}}
+.w.rustle img{animation:rs .1s steps(2) infinite}
+@keyframes rs{50%{transform:translateX(2.5%) rotate(1.5deg)}}
+.w.fiddle img{animation:fd .3s ease-in-out infinite alternate}
+@keyframes fd{to{transform:rotate(-2deg) translateY(-1%)}}
+.w.fidget img{animation:fg .16s ease-in-out infinite alternate}
+@keyframes fg{to{transform:translateX(5%) rotate(5deg)}}
+.hand{position:absolute;left:74%;top:-30%;width:40%;pointer-events:none}.hand svg{display:block;width:100%;height:auto;animation:pop .2s ease-in-out infinite alternate}
+.chat{position:absolute;left:3%;top:15%;width:47%;z-index:6;display:flex;flex-direction:column;gap:3px;pointer-events:none}
+.chat p{align-self:flex-start;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:rgba(10,12,24,.7);color:#fff;font-size:12px;font-weight:800;padding:1px 7px;border-radius:7px}
+.chat p.h{background:#d8261c;font-size:13px}
+.tip{position:absolute;z-index:3;transform:translate(-50%,-100%) rotate(-3deg);background:#fff27a;color:var(--ink);border:2px solid var(--ink);box-shadow:3px 3px 0 rgba(0,0,0,.35);padding:3px 9px 4px;font-size:13px;font-weight:800;line-height:1.3;white-space:nowrap;pointer-events:none;text-align:center}
+.tip b{display:block;font-size:10px;color:#6b5a00}
+.bub.mut{background:#ece6ff;font-style:italic}
+.gl{position:absolute;left:39%;top:19.2%;width:38%;height:9%;pointer-events:none}.gl svg{display:block;width:100%;height:100%;overflow:visible}
+#guru.fallen{transform:none!important;height:36%!important}
+/* 言い訳の3択（吹き出し） */
+#choices{position:absolute;left:3%;bottom:54px;width:64%;z-index:11;display:flex;flex-direction:column;gap:8px}
+.chc{position:relative;min-height:48px;text-align:left;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:6px 14px;font-weight:800;font-size:clamp(14px,4.2cqw,17px);line-height:1.25;box-shadow:0 4px 0 rgba(0,0,0,.35);animation:chIn .22s ease-out backwards}
+.chc:nth-child(2){animation-delay:.05s}.chc:nth-child(3){animation-delay:.1s}
+.chc::after{content:'';position:absolute;right:-13px;top:50%;margin-top:-8px;border:8px solid transparent;border-left:12px solid var(--ink);border-right:0}
+.chc:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.35);background:var(--yel)}
+.chc.kage{background:#ffe1dc}
+@keyframes chIn{from{transform:translateX(-30px) scale(.9);opacity:0}}
+/* 変装ボタン */
+#item{width:29%;max-width:126px;flex:none;align-self:center;min-height:76px;border-radius:18px;background:#3b4566;color:#8e98b6;border:2.5px solid #56618a;font-weight:800;font-size:12px;line-height:1.2;padding:6px 4px 5px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
+#item .ic{width:58%;max-width:56px;opacity:.45}#item .ic svg{display:block;width:100%;height:auto}
+#item .it{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#item .n{position:absolute;right:-4px;top:-8px;min-width:26px;height:22px;border-radius:11px;background:#56618a;color:#fff;font-size:12px;line-height:22px;padding:0 5px}
+#item.has{background:#fbf7ee;color:var(--ink);border-color:var(--ink);box-shadow:0 4px 0 var(--ink)}#item.has .ic{opacity:1}#item.has .n{background:var(--red)}
+#item.has:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+#item.on{background:var(--yel);color:var(--ink);border-color:var(--ink);animation:exb .4s ease-in-out infinite alternate}#item.on .ic{opacity:1}
+.mag .quote{max-width:100%;display:flex;flex-direction:column;gap:4px}
+.mag .quote div{background:#111;color:#fff;padding:3px 7px;transform:rotate(-1.5deg);max-width:100%}
+.mag .quote span{display:block;font-size:9px;color:var(--yel);font-weight:800}
+.mag .quote b{display:block;font-size:12px;line-height:1.25;font-weight:800}
 
 /* 結果: 週刊誌の表紙 */
 #vResult{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:calc(var(--top) + 50px) 14px calc(var(--bot) + 6px);background:#2a2420}
@@ -259,11 +295,12 @@ html[lang=en] .mag .mast b{font-size:min(6.6vw,5svh,30px)}
   <div id="stage">
     <div class="bg" id="bg"></div>
     <div id="actors"></div>
-    <div class="spr" id="guru"><img id="guruImg" src="img/guru_talk.webp" alt=""></div>
+    <div class="spr" id="guru"><img id="guruImg" src="img/guru_talk.webp" alt=""><div class="gl" id="gGlass"></div><div class="gl" id="gSlip"></div></div>
     <svg id="beams"></svg>
     <div id="fxl"></div>
     <div id="slow"></div>
     <div id="flash"></div>
+    <div id="choices" hidden></div>
     <div id="card" hidden><div class="page"><h3 data-t="planner"></h3><ul id="plist"></ul></div></div>
   </div>
   <div class="ctrl" id="ctrl">
@@ -282,7 +319,7 @@ html[lang=en] .mag .mast b{font-size:min(6.6vw,5svh,30px)}
         <text class="elab" id="eyeLab" x="100" y="128" text-anchor="middle"></text>
       </svg>
     </button>
-    <button id="ex" type="button" disabled><span id="exTxt"></span><span class="cred" id="cred"></span></button>
+    <button id="item" type="button" disabled aria-label="disguise"><span class="ic" id="itIcon"></span><span class="it" id="itTxt"></span><span class="n" id="itN"></span></button>
     <div class="hint" id="hint" hidden></div>
     <svg id="finger" viewBox="0 0 48 48" hidden><path d="M18 44 L14 24 Q13 20 16.5 19.5 Q19.5 19.3 20 23 L21 28 L21 9 Q21 5 24.5 5 Q28 5 28 9 L28 22 Q32 20.5 34 23 Q38 22 39 26 L39 34 Q39 40 35 44 Z" fill="#fff" stroke="#1e1c19" stroke-width="2.5" stroke-linejoin="round"/></svg>
   </div>
@@ -293,7 +330,7 @@ html[lang=en] .mag .mast b{font-size:min(6.6vw,5svh,30px)}
     <div class="mast"><b data-t="paper"></b><span data-t="paperNo"></span></div>
     <div class="photo" id="rPhoto"></div>
     <div class="head" id="rHead"></div>
-    <div class="low"><div class="side" id="rSide" hidden></div><div class="facts" id="rFacts"></div></div>
+    <div class="low"><div class="side" id="rSide" hidden></div><div class="quote" id="rQuote" hidden></div><div class="facts" id="rFacts"></div></div>
     <div class="stamp" id="rStamp"><b id="rRank"></b><span id="rTitle"></span></div>
   </div>
   <div class="rBtns">
@@ -329,11 +366,11 @@ html[lang=en] .mag .mast b{font-size:min(6.6vw,5svh,30px)}
 </script>
 <script src="tm.js?v=1" data-game="short-sleeper"></script>
 <script src="sfx.js?v=1"></script>
-<script src="data.js?v=2"></script>
-<script src="art.js?v=1"></script>
-<script src="core.js?v=2"></script>
-<script src="bot.js?v=1"></script>
-<script src="game.js?v=2"></script>
+<script src="data.js?v=3"></script>
+<script src="art.js?v=2"></script>
+<script src="core.js?v=3"></script>
+<script src="bot.js?v=2"></script>
+<script src="game.js?v=3"></script>
 <script src="support.js?v=1" data-ja="枕" data-en="a pillow"></script>
 </body>
 </html>

@@ -19,3 +19,7 @@
 - snd/bgm.mp3: Comedy Funny Background Song / Almitory / CC-BY 3.0,CC-BY 4.0,CC-BY-SA 3.0,CC-BY-SA 4.0,CC0,GPL 2.0,GPL 3.0,OGA-BY 3.0
 - snd/click.mp3: Interface Sounds / Kenney / CC0
 - snd/roll.mp3: File:Drum Roll Intro.ogg / Iwan Sounds and DIY / CC0
+- snd/rustle.mp3: 100 CC0 SFX (paper_02) / rubberduck / CC0
+- snd/ping.mp3: 100 CC0 SFX (bell_02) / rubberduck / CC0
+- snd/clink.mp3: 100 CC0 SFX (glass_01) / rubberduck / CC0
+- snd/crash.mp3: 75 CC0 breaking/falling/hit sfx (bfh1_falling_03) / rubberduck / CC0

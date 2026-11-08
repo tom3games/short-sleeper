@@ -1,0 +1,10 @@
+ART STYLE (strict): Japanese gag-manga illustration for a silly comedy game, printed and cut out like a paper puppet. Thick, confident, slightly wobbly hand-inked black outlines. Flat cel colors with at most one simple shadow tone. Huge, rubbery, hilariously exaggerated cartoon face, few lines, no wrinkles. Chunky simplified body about 3 heads tall, big head, no anatomical detail. Warm and funny, never scary, never gross. No realism, no photo, no 3D render, no gradients, no airbrush, no texture noise, no blood, nothing sexual. An original invented character, not based on any existing franchise, brand, celebrity or real person.
+
+SUBJECT: the SAME fictional guru as in the reference image (same absurdly tall swirled silver pompadour like soft-serve, dark under-eye bags, glossy bright ORANGE double-breasted suit, white shirt, thin black tie, headset microphone, black smartwatch, same full-body standing framing, same scale, same three-quarters view turned toward the LEFT). He is secretly ASLEEP standing in all three poses, using a disguise. Three new full-body poses, feet on the same baseline:
+1. LEFT: "shades": wearing big black sunglasses, standing upright with arms crossed confidently, but his mouth hangs slightly open and a drop of drool runs down his chin. Asleep behind the glasses.
+2. CENTER: "painted": wearing silly glasses with big wide-open cartoon eyes painted on the lenses, standing stiffly, real head drooping slightly, mouth open with drool.
+3. RIGHT: "book": holding an open hardcover book up so it completely covers his face, as if reading intently, but his body slumps and his knees are soft. The book cover is plain red with no letters.
+
+Three equal columns, none overlapping, wide empty gaps.
+
+BACKGROUND: perfectly flat pure chroma green #00FF00 across the whole image, no floor, no shadow, no text, no speech bubbles, no lettering, no letters on clothes, no extra objects. Do not use any green on the character. Whole figure inside the frame with margin on all sides.

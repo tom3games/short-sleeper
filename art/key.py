@@ -33,6 +33,14 @@ SHEETS = {
   'audience_a': (['aud0_look', 'aud1_look', 'aud2_look'], 440),
   'audience_b': (['aud0_away', 'aud1_away', 'aud2_away'], 440),
   'audience_c': (['aud0_shock', 'aud1_shock', 'aud2_shock'], 440),
+  # v2（2026-11-09）: 見る人ごとの合図・変装・寝言・傾き
+  'obachan_a': (['oba_away', 'oba_turn', 'oba_look'], 440),
+  'kid_a': (['kid_still', 'kid_fidget', 'kid_look'], 400),
+  'shacho_a': (['shacho_away', 'shacho_turn', 'shacho_look'], 440),
+  'shock_b': (['oba_shock', 'kid_shock', 'shacho_shock'], 440),
+  'aud2_c': (['aud2_hear', 'aud2_turn', 'aud2_cup'], 440),
+  'guru_c': (['guru_shades', 'guru_painted', 'guru_book'], 700),
+  'guru_d': (['guru_think', 'guru_mutter', 'guru_tilt'], 700),
 }
 # 絵がとなりの列にはみ出していても切れないように、つながった塊ごとに「重心がどの列か」で分ける（1/4 に縮めて数える）
 from collections import deque
@@ -42,13 +50,17 @@ def owners(im, cs):
     for y0 in range(h):
         for x0 in range(w):
             if not a[y0, x0] or lab[y0, x0] >= 0: continue
-            k = len(col); q = deque([(y0, x0)]); lab[y0, x0] = k; sx = n = 0
+            k = len(col); q = deque([(y0, x0)]); lab[y0, x0] = k; sx = n = 0; mnx = mxx = x0
             while q:
-                y, x = q.popleft(); sx += x; n += 1
+                y, x = q.popleft(); sx += x; n += 1; mnx = min(mnx, x); mxx = max(mxx, x)
                 for yy, xx in ((y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)):
                     if 0 <= yy < h and 0 <= xx < w and a[yy, xx] and lab[yy, xx] < 0: lab[yy, xx] = k; q.append((yy, xx))
-            cx = sx / n * S; col.append(next(i for i in range(3) if cx < cs[i + 1]))
+            cx = sx / n * S; col.append(-2 if (mxx - mnx) * S > im.width * 0.45 else next(i for i in range(3) if cx < cs[i + 1]))
     m = np.where(lab >= 0, np.array(col + [0])[lab], -1)
+    # 2人以上がくっついた塊は、切れ目の列でそのまま分ける
+    xs = np.arange(w)[None, :].repeat(h, 0) * S
+    colx = np.select([xs < cs[1], xs < cs[2]], [0, 1], 2)
+    m = np.where(m == -2, colx, m)
     return np.asarray(Image.fromarray((m + 1).astype(np.uint8)).resize(im.size, Image.NEAREST)).astype(np.int32) - 1
 out = {}
 for src, (names, m) in SHEETS.items():
