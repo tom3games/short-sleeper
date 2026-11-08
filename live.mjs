@@ -19,7 +19,7 @@ for (const [name, bt, opts] of [['chromium', chromium, {}], ['webkit', webkit, {
   // ---- 遊びの通し（タイトルから遊んで結果まで。読む bot で早送り）
   const xy = await p.evaluate(() => SS.itemXY('start'))
   if (name === 'webkit') await p.touchscreen.tap(xy.x, xy.y); else await p.mouse.click(xy.x, xy.y)
-  const res = await p.evaluate(() => { SS.dbg.pause(true); window.__ssBot = SSBot.BOTS.read(); const r = SS.run; let n = 0; while (!r.over && n++ < 60 * 400) SS.dbg.step(1); window.__ssBot = null; SS.dbg.pause(false); return { rank: r.result.rank, mute: window.__muteOk() } })
+  const res = await p.evaluate(() => { SS.dbg.pause(true); window.__ssBot = SSBot.BOTS.reader(); const r = SS.run; let n = 0; while (!r.over && n++ < 60 * 400) SS.dbg.step(1); window.__ssBot = null; SS.dbg.pause(false); return { rank: r.result.rank, mute: window.__muteOk() } })
   await p.waitForTimeout(3000)
   out.push(`${name}: result=${JSON.stringify(res)} view=${await p.evaluate(() => !document.querySelector('#vResult').hidden)}`)
   await p.screenshot({ path: `shots/live-${name}.png` })
