@@ -2,7 +2,7 @@
 window.SS_TXT = {
   ja: {
     loading: 'まぶたを開けています',
-    title: '1日3分しか寝ない男', sub: 'THE 3-MINUTE SLEEPER',
+    title: '1日3分のショートスリーパー', sub: 'THE 3-MINUTE SLEEPER',
     lead: '「睡眠は1日3分で足りる」と言い張る先生の、長い1日。見られていない間に、こっそり寝ろ。',
     book: '最新刊『寝るな。』発売中',
     start: '1日をはじめる', how: '遊び方', back: 'もどる',
@@ -56,12 +56,12 @@ window.SS_TXT = {
     side: { jour: '取材した記者も居眠りしていた', asst: '助手も配信中に寝ていた', none: '記者は何も撮れなかった' },
     rankL: '判定',
     again: 'もう一回', save: '画像を保存', xPost: 'Xでポスト', toTitle: 'タイトルへ',
-    xText: '1日3分しか寝ないはずが、実際は{h}時間{m}分寝ていた「{t}」 #1日3分しか寝ない男',
+    xText: '1日3分しか寝ないはずが、実際は{h}時間{m}分寝ていた「{t}」 #1日3分のショートスリーパー',
     hm: '{h}時間{m}分',
   },
   en: {
     loading: 'Opening eyelids',
-    title: 'The 3-Minute Sleeper', sub: '1日3分しか寝ない男',
+    title: 'The 3-Minute Sleeper', sub: '1日3分のショートスリーパー',
     lead: 'A self-help guru swears he only needs 3 minutes of sleep a day. Get through his long day by napping whenever nobody is looking.',
     book: 'New book "DON\'T SLEEP." out now',
     start: 'Start the day', how: 'How to play', back: 'Back',

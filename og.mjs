@@ -38,7 +38,7 @@ img{position:absolute;filter:drop-shadow(5px 8px 0 rgba(0,0,0,.3))}
 <img src="img/aud2_shock.webp" style="left:445px;bottom:-12px;height:250px">
 <div class="mark" style="left:480px;top:130px">!?</div>
 <div class="ono" style="right:70px;top:40px">ぐおー</div>
-<div class="t"><span class="en">THE 3-MINUTE SLEEPER</span><h1>1日<em>3分</em>しか<br>寝ない男</h1></div>
+<div class="t"><span class="en">THE 3-MINUTE SLEEPER</span><h1>1日<em>3分</em>の<br>ショート<br>スリーパー</h1></div>
 <div class="bub" style="right:330px;top:250px">瞑想です</div>
 </body></html>`)
 await p.waitForLoadState('networkidle'); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(400)

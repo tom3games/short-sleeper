@@ -1,4 +1,4 @@
-// 1日3分しか寝ない男: 画面・音・入力。中身は core.js
+// 1日3分のショートスリーパー: 画面・音・入力。中身は core.js
 ;(function () {
   'use strict'
   const C = window.SSCore, P = C.P, TX = window.SS_TXT, LAY = window.SS_LAYOUT, ART = window.SS_ART
@@ -15,7 +15,7 @@
     document.querySelectorAll('[data-t]').forEach(el => { const v = T()[el.dataset.t]; if (v != null) el.textContent = v })
     document.querySelectorAll('[data-h]').forEach(el => { el.innerHTML = T()[el.dataset.h] })
     $('#langTxt').textContent = lang === 'ja' ? 'EN' : '日本語'
-    $('#tTitle').innerHTML = lang === 'ja' ? '1日<em>3分</em>しか<br>寝ない男' : 'The <em>3-Minute</em><br>Sleeper'
+    $('#tTitle').innerHTML = lang === 'ja' ? '1日<em>3分</em>の<br>ショート<br>スリーパー' : 'The <em>3-Minute</em><br>Sleeper'
     $('#eyeLab').textContent = T().eye
     if (run) { updateTop(true); buildPlanner() }
     updateEx(true)
