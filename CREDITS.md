@@ -1,0 +1,21 @@
+- snd/sn1.mp3: File:Snoring of old man.ogg (sliced) / Saaabaaato / CC0
+- snd/sn2.mp3: File:Snoring of old man.ogg (sliced) / Saaabaaato / CC0
+- snd/sn3.mp3: File:Snoring of old man.ogg (sliced) / Saaabaaato / CC0
+- snd/snoreloop.mp3: File:Snoring of old man.ogg (sliced) / Saaabaaato / CC0
+- snd/burst.mp3: File:Auslösegeräusch SLR Serienaufnahme mit AF Schärfepriorität.ogg（頭の1.9秒） / Smial / CC0
+- snd/shutter.mp3: File:Holga shuttersound.ogg / Doitashimashite / Public domain
+- snd/gong.mp3: 100 CC0 SFX / rubberduck / CC0
+- snd/applause.mp3: File:Slow starting applause.ogg（盛り上がりの4秒） / Wikimedia Commons / Public domain
+- snd/laugh.mp3: File:72844 lonemonk approx-800-laughter-and-clapter-1.wav / lonemonk on freesound.org / CC BY 3.0
+- snd/murmur.mp3: File:Restaurant ambience.ogg（20秒を切り出し・継ぎ目を重ねた） / Wikimedia Commons / Public domain
+- snd/watch.mp3: File:Segnale_audio_di_arrivo_SMS.ogg (先頭) / Pracchia-78 / Public domain
+- snd/vib.mp3: File:Mobile_phone_interference.ogg (切り出し) / Ezwa / Public domain
+- snd/yawn.mp3: File:Yawning 1.ogg / ezwa / Public domain
+- snd/boing.mp3: 100 CC0 SFX / rubberduck / CC0
+- snd/flip1.mp3: 10 Book Page Flips / StarNinjas / CC0
+- snd/flip2.mp3: 10 Book Page Flips / StarNinjas / CC0
+- snd/win.mp3: 85 Short music jingles / Kenney / CC0
+- snd/lose.mp3: 85 Short music jingles / Kenney / CC0
+- snd/bgm.mp3: Comedy Funny Background Song / Almitory / CC-BY 3.0,CC-BY 4.0,CC-BY-SA 3.0,CC-BY-SA 4.0,CC0,GPL 2.0,GPL 3.0,OGA-BY 3.0
+- snd/click.mp3: Interface Sounds / Kenney / CC0
+- snd/roll.mp3: File:Drum Roll Intro.ogg / Iwan Sounds and DIY / CC0

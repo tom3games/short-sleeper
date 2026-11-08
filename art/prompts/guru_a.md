@@ -1,0 +1,10 @@
+ART STYLE (strict): Japanese gag-manga illustration for a silly comedy game, printed and cut out like a paper puppet. Thick, confident, slightly wobbly hand-inked black outlines. Flat cel colors with at most one simple shadow tone. Huge, rubbery, hilariously exaggerated cartoon face, few lines, no wrinkles. Chunky simplified body about 3 heads tall, big head, no anatomical detail. Warm and funny, never scary, never gross. No realism, no photo, no 3D render, no gradients, no airbrush, no texture noise, no blood, nothing sexual. An original invented character, not based on any existing franchise, brand, celebrity or real person.
+
+SUBJECT: a character sheet of ONE fictional self-help guru who brags that he only needs 3 minutes of sleep a day. A tall, lanky Japanese man around 50 with an absurdly tall swirled silver pompadour like soft-serve ice cream, thick black eyebrows, huge shiny white teeth, and very dark purple bags under his eyes. He wears a glossy bright ORANGE double-breasted suit, white shirt, thin black tie, a thin skin-colored headset microphone by his cheek, and a chunky black smartwatch on his left wrist. Body turned three-quarters toward the LEFT side of the image in all poses.
+
+Draw EXACTLY THREE full-body standing poses side by side in three equal columns, none overlapping, wide empty gaps, feet on the same baseline, same scale:
+1. LEFT: "talk": energetic seminar speaker, one arm raised with index finger pointing up, chest out, eyes forced wide open, giant confident grin.
+2. CENTER: "doze": still standing but dozing off, head drooping forward and sideways, eyes shut as two curved lines, mouth slightly open, arms hanging limp, knees soft.
+3. RIGHT: "deep": completely asleep standing up, head tilted far back, mouth wide open snoring, a long string of drool from the mouth corner, pompadour flopped over, arms dangling.
+
+BACKGROUND: perfectly flat pure chroma green #00FF00 across the whole image, no floor, no shadow, no text, no speech bubbles, no lettering, no letters on clothes, no extra objects. Do not use any green on the character. Whole figure inside the frame with margin on all sides.
