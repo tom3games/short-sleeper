@@ -27,7 +27,7 @@
 :root{
   --ink:#1d1a17;--paper:#fbf7ee;--suit:#f07a1a;--night:#1f2a44;--red:#d8261c;--yel:#ffd23a;
   --pop:'RocknRoll One','Hiragino Sans','Yu Gothic',sans-serif;--body:'M PLUS 1p','Hiragino Sans','Yu Gothic',sans-serif;
-  --top:max(8px,env(safe-area-inset-top));--bot:max(10px,env(safe-area-inset-bottom));
+  --top:max(8px,env(safe-area-inset-top));--bot:calc(max(10px,env(safe-area-inset-bottom)) + var(--inapp-bot,0px));
 }
 html{background:var(--night);touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 html,body{height:100%;color:var(--ink);font-family:var(--body);-webkit-tap-highlight-color:transparent;word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
@@ -80,6 +80,9 @@ body.playing #corner{display:none}
 .credit{margin-top:8px;font-size:10px;line-height:1.4;color:#7a6f5c;text-align:center}.credit a{color:inherit}
 .credit a.pv{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;font-size:12px}
 #vHow .sub{width:min(440px,100%)}
+/* 背の低い画面（X のアプリの中は下の帯の分だけ低い）: 遊び方の札を詰める */
+@media (max-height:600px){#vHow{gap:8px}.inst{padding:10px 14px 6px}.inst h2{font-size:18px;margin-bottom:4px}.inst ol{gap:4px;font-size:13px;line-height:1.45}.inst .goal{margin-top:4px;font-size:13px}.credit{margin-top:4px}}
+@media (max-height:680px){html.inapp-x #vHow{gap:8px}html.inapp-x .inst{padding:10px 14px 6px}html.inapp-x .inst h2{font-size:18px;margin-bottom:4px}html.inapp-x .inst ol{gap:4px;font-size:13px;line-height:1.45}html.inapp-x .inst .goal{margin-top:4px;font-size:13px}html.inapp-x .credit{margin-top:4px}}
 
 /* プレイ */
 #vPlay{display:flex;flex-direction:column;background:#000}
@@ -373,6 +376,6 @@ html[lang=en] .mag .mast b{font-size:min(6.6vw,5svh,30px)}
 <script src="core.js?v=3"></script>
 <script src="bot.js?v=2"></script>
 <script src="game.js?v=3"></script>
-<script src="support.js?v=2" data-ja="枕" data-en="a pillow"></script>
+<script src="support.js?v=3" data-ja="枕" data-en="a pillow"></script>
 </body>
 </html>
